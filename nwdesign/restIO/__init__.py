@@ -1,0 +1,2 @@
+class restFileerror(object):
+    pass
