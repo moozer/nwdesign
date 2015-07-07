@@ -7,7 +7,7 @@ import unittest
 from restIO import *
 from restIO.restReader import *
 
-filename = "somefile.rst"
+filename = "data/basicNw.rst"
 
 
 class Test(unittest.TestCase):
@@ -18,8 +18,9 @@ class Test(unittest.TestCase):
         self.assertEqual( r.filename, filename )
         pass
 
-    
-
+    def testRead(self):
+        r = restReader( filename )
+        r.parseFile()
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
