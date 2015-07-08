@@ -10,11 +10,10 @@ Switch01
 :Model: HP procurve 1810
 
 =========	===================     ===========     ========= ==========
-Interface	VLANs                   Connected       Interface Comments
-									device    
+Interface	VLANs                   Remote		Remote 		Comments
+					device		interface
 =========	===================     ===========     ========= ==========
-1		Default, SRV (T),       Switch02        1
-		USR (T), WAN (T)     
+1		Default, SRV (T)        Switch02        1
 2		SRV
 =========	===================     ===========     ========= ==========
 
@@ -26,11 +25,10 @@ Switch02
 :Model: HP procurve 1810
 
 
+=========	===================     ===========     ========= ==========
+Interface	VLANs                   Remote		Remote 		Comments
+					device		interface
 =========       ===================     ===========     ========= ==========
-Interface       VLANs                   Connected       Interface Comments
-                                        device    
-=========       ===================     ===========     ========= ==========
-1               Default, SRV (T),       Switch01	    6	
-                USR (T), WAN(T)
+1               Default, SRV (T)        Switch01	    6	
 2               SRV
 =========       ===================     ===========     ========= ==========
