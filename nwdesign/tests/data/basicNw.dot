@@ -1,6 +1,7 @@
 graph nw {
 	graph [sep="+50,50" overlap=scale]
 	node [shape="none" labelloc="b"];
+	edge [color="black"]
 
 	Switch01 [label="Switch01" image="icons/switch.png"];
 	Switch02 [label="Switch02" image="icons/switch.png"];
