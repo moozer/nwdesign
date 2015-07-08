@@ -98,8 +98,6 @@ class restReader(object):
             header = rawText.replace( '\n', " ")
             headerList.append( header )
             
-        #print headerList
-
         # node -> tgroup -> tbody
         rowNodes = node[0][-1]
 
@@ -109,12 +107,12 @@ class restReader(object):
             for colNum in range( 0, len(headerList) ):
                 # row -> col -> paragraph -> raw text
                 tableEntry = rowNodes[rowNum][colNum]
+                # entry might be empty
                 entriesDict[headerList[colNum]] = tableEntry[0].rawsource if len(tableEntry) > 0 else ""
 
-            # store dictionary in list
+            # store dictionary in list to be returned
             entriesList.append( copy.deepcopy( entriesDict ) )
         
-        print entriesList
         return entriesList
     
     
