@@ -18,7 +18,7 @@ class l2Graph(object):
 
     styles = {
         'graph': {
-            'sep': '+50,50',
+            'sep': '+25,25',
             'overlap': 'scale',
         },
         'nodes': {
